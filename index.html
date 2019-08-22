@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Proyect web</title>
+</head>
+
+<body>
+
+    <section>
+        <div id="div-initial">
+            <div class="div-section-top">
+                <div class="contact-top-section">
+                    <li><i class="fa fa-phone"></i><a href="#"> + xx xxx xxx</a></li>
+                    <li><i class="fa fa-envelope"></i><a href="#"> xxx@xxx.com</a></li>
+                </div>
+                <div class="icons-social">
+                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa fa-skype"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#Discography/disco1">Conserjería</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Limpieza</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Administración</a></li>
+                    <li class="divider"></li>
+                    <!-- <li><a href="#!"></a></li> -->
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#Bio" id="bio_route">¿Quiénes somos?</a></li>
+                    <li><a href="#Multimedia" id="multi_route">Misión</a></li>
+                    <li><a href="#Contact">Contacto</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Servicios<i class="material-icons"
+                                        data-target="dropdown1">arrow_drop_down</i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#Discography/disco1">Conserjería</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!">Limpieza</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!">Administración</a></li>
+                                        <li class="divider"></li>
+                                        <!-- <li><a href="#!"></a></li> -->
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-wrapper">
+                    <a href="#Home" class="brand-logo"><img src="./images/sozatext.png" alt="logo-soza"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#Bio" id="bio_route">¿Quiénes somos?</a></li>
+                        <li><a href="#Multimedia" id="multi_route">Misión</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Servicios<i
+                                    class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-logo">
+                <img src="./images/sozalogo2.png" alt="logo">
+            </div>
+        </div>
+        <div class="container">
+            <h1>¿Quiénes somos?</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae nesciunt perspiciatis, quis
+                sint aspernatur! Laudantium iure deleniti ea similique fugiat magnam suscipit, maxime dolorum culpa
+                dignissimos nihil eum eveniet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam aspernatur incidunt voluptatum
+                odio, quidem itaque fugit cupiditate magni voluptatem! Distinctio ea quibusdam nihil possimus eius autem
+                delectus provident vel?</p>
+        </div>
+        <div class="carousel carousel-slider" data-indicators="true">
+            <a class="carousel-item" href="#one!"><img src="./images/carousel1.jpg" alt="conserjeria">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut voluptas, consectetur,
+                    perspiciatis doloremque repudiandae quod fuga magnam suscipit iure, sed sequi. Vero facilis possimus
+                    illum sequi, libero nemo voluptate?</h2>
+            </a>
+            <a class="carousel-item" href="#two!"><img src="./images/carousel2.png" alt="conserjeria">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut voluptas, consectetur,
+                    perspiciatis doloremque repudiandae quod fuga magnam suscipit iure, sed sequi. Vero facilis possimus
+                    illum sequi, libero nemo voluptate?</h2>
+            </a>
+            <a class="carousel-item" href="#three!"><img src="./images/carousel3.png" alt="conserjeria">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut voluptas, consectetur,
+                    perspiciatis doloremque repudiandae quod fuga magnam suscipit iure, sed sequi. Vero facilis possimus
+                    illum sequi, libero nemo voluptate?</h2>
+            </a>
+        </div>
+        <div class="container">
+            <h1>Conoce nuestra Misión</h1>
+            <div class="card">
+                <div class="card-content">
+                    <p class="card-text">Objetivos</p>
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#test4">Visión</a></li>
+                        <li class="tab"><a class="active" href="#test5">Objetivos</a></li>
+                        <li class="tab"><a href="#test6">Valores</a></li>
+                    </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                    <div id="test4">Nos destacamos en test1</div>
+                    <div id="test5">Nos destacamos en test2</div>
+                    <div id="test6">Nos destacamos en test3</div>
+                </div>
+            </div>
+            <li class="divider"></li>
+            <li class="divider"></li>
+            <h2>Sobre nuestros Servicios</h2>
+            <div class="about">
+                <div class="background-about">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+                <div class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusamus nam, soluta consequuntur
+                    totam eum illum tempora quae officia commodi nemo, magni delectus aliquam minus enim impedit! Esse,
+                    quisquam modi?
+                </div>
+            </div>
+            <li class="divider divider-especial"></li>
+            <li class="divider"></li>
+            <li class="divider"></li>
+            <div class="about">
+                <div class="background-about">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+                <div class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusamus nam, soluta consequuntur
+                    totam eum illum tempora quae officia commodi nemo, magni delectus aliquam minus enim impedit! Esse,
+                    quisquam modi?
+                </div>
+            </div>
+            <li class="divider divider-especial"></li>
+            <li class="divider"></li>
+            <li class="divider"></li>
+            <div class="about">
+                <div class="background-about">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+                <div class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusamus nam, soluta consequuntur
+                    totam eum illum tempora quae officia commodi nemo, magni delectus aliquam minus enim impedit! Esse,
+                    quisquam modi?
+                </div>
+            </div>
+            <li class="divider divider-especial"></li>
+            <li class="divider"></li>
+            <li class="divider"></li>
+            <div class="portfolio">
+                <h2 class="title">Nuestros últimos <span>clientes</span></h2>
+                <div class="row">
+                    <div class="col s12 m6 l4 portfolio-div">
+                        <div class="portfolio-img">
+                            <img src="./images/bg2.jpg" alt="portfolio-img">
+                            <div class="background-portfolio">
+                                Title Test
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis, corrupti
+                                atque natus commodi eius consectetur. Ut, dicta eum rem ab, impedit dolore facilis
+                                recusandae, eligendi libero labore maiores. Iusto.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 portfolio-div">
+                        <div class="portfolio-img">
+                            <img src="./images/bg2.jpg" alt="portfolio-img">
+                            <div class="background-portfolio">
+                                Title Test
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis, corrupti
+                                atque natus commodi eius consectetur. Ut, dicta eum rem ab, impedit dolore facilis
+                                recusandae, eligendi libero labore maiores. Iusto.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 portfolio-div">
+                        <div class="portfolio-img">
+                            <img src="./images/bg2.jpg" alt="portfolio-img">
+                            <div class="background-portfolio">
+                                Title Test
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis, corrupti
+                                atque natus commodi eius consectetur. Ut, dicta eum rem ab, impedit dolore facilis
+                                recusandae, eligendi libero labore maiores. Iusto.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 portfolio-div">
+                        <div class="portfolio-img">
+                            <img src="./images/bg2.jpg" alt="portfolio-img">
+                            <div class="background-portfolio">
+                                Title Test
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis, corrupti
+                                atque natus commodi eius consectetur. Ut, dicta eum rem ab, impedit dolore facilis
+                                recusandae, eligendi libero labore maiores. Iusto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h1>Contactanos!</h1>
+        <div class="row">
+            <div class="col xl4 icons">
+                <div class="icons-info">
+                    <div>
+                        <i class="small material-icons">email</i>
+                        <a href="#!" target="_blank">
+                            <h4>Envíanos un correo!</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="small material-icons">perm_phone_msg</i>
+                        <h4>Nuestro teléfono </h4>
+                    </div>
+                    <div>
+                        <i class="small material-icons">edit_location</i>
+                        <h4>Locación de la empresa: TEST</h4>
+                    </div>
+                    <div>
+                        <img src="./images/sozalogo3.png" alt="logo-soza">
+                        <h5 class="copyright">Copyright © Todos los Derechos Reservados</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col xl8">
+                <div class="row footer-form">
+                    <form class="col s12" action="https://formspree.io/arcarius11@gmail.com" method="POST">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate" name="Nombre">
+                                <label for="first_name">Nombre completo</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="tel" class="validate" name="Teléfono">
+                                <label for="icon_telephone">Tu teléfono</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate" name="E-mail">
+                                <label for="email">Tu correo electrónico</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea" name="Consulta"></textarea>
+                                <label for="icon_prefix2">Ingresa tu consulta</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="ubicacion" name="Ubicación" type="text" class="validate">
+                                <label for="ubicacion">Ubicación y/o dirección donde requiere los servicios</label>
+                            </div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Click para enviar!
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-maktub">
+        <h4 class="maktub">Made with <i class="fa fa-heart"></i> by <a href="https://maktubweb.com/"
+                target="_blank">Maktub Web</a></h4>
+    </div>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
