@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
     setInterval(() => {
         $('.carousel').carousel("next")
-    }, 3000);
+    }, 5000);
     $(".brand-logo").fadeOut(0)
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1) {
@@ -35,18 +35,21 @@ $(document).ready(function () {
             })
         }
         switch (e.target.innerText) {
-            case "OBJETIVOS":
-                var textValue = "TEST OBJETIVOS CON FUNCION"
-                changeValue(textValue)
-                break
-            case "VALORES":
-                var textValue = "TEST VALORES"
+            case "OBJETIVO":
+                var textValue = "Ofrecemos solidez y confianza basada en nuestra trayectoria. La actividad se ha ido complejizando a través de los años y hemos sabido responder a los nuevos desafíos. Tenemos como objetivo mejorar continuamente nuestra calidad de servicios"
                 changeValue(textValue)
                 break
             case "VISIÓN":
-                var textValue = "TEST VISION"
+                var textValue = "Ser reconocidos como una empresa de referencia en el mercado por nuestra capacidad de brindar soluciones integrales basándonos en el perfeccionamiento continuo de nuestros servicios y en la excelencia de nuestro equipo de trabajo."
+                changeValue(textValue)
+                break
+            case "VALORES":
+                var textValue = "Atención personalizada, honestidad, transparencia, responsabilidad y trabajo en equipo, mejora continua y vocación de servicio."
                 changeValue(textValue)
                 break
         }
+    })
+    $("button").on("click", function (event) {
+        Swal.fire('Estás a punto de ser redireccionado!')
     })
 })

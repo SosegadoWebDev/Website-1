@@ -1,5 +1,7 @@
 section {
-    background-color: rgb(255, 255, 255)
+    background-image: url(../images/pexels-photo-303335.jpeg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .contact-top-section, .icons-social {
     display: inline;
@@ -22,7 +24,7 @@ section {
     padding-right: 90px;
 }
 nav {
-    background-color: rgba(255, 255, 255, 0.363);
+    background-color: transparent;
 }
 .sidenav-overlay {
     z-index: 1 !important;
@@ -34,11 +36,13 @@ nav {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px white;
 }
 .nav-wrapper a img {
     margin-left: 25px;
-    width: 350px;
-    height: 80px;
+    margin-top: 5px;
+    width: 380px;
+    height: 65px;
 }
 .font-normal {
     font-size: 1.5rem !important;
@@ -47,22 +51,20 @@ nav {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
 }
+.text-p {
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 .dropdown-content {
     width: auto !important;
 }
-.container-logo {
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #div-initial {
-    background-image: url(../images/background1.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 666;
+    width: 100%;
 }
 .nav-fixed {
     position: fixed;
@@ -76,6 +78,8 @@ nav {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     text-align: justify;
     border-radius: 12px;
+    background-color: #fbfbfb1a;
+    color: #ffffffc4;
 }
 .portfolio-div .portfolio-img img{
     width: 100%;
@@ -107,15 +111,30 @@ nav {
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
 }
+.background-portfolio img {
+    width: 100px !important;
+    height: 100px !important;
+}
 .portfolio-img:hover .background-portfolio{
     display: none;
     z-index: 1;
 }
-.title {
+.main-title {
     text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    color: black !important;
+    text-shadow: 0px 0px 15px rgb(163, 211, 255);
+}
+.footer h1 {
+    text-shadow: none;
 }
 .carousel {
-    height: 600px !important;
+    height: 100vh !important;
+}
+.carousel.carousel-slider {
+    position: relative;
 }
 .carousel.carousel-slider .carousel-item h2 {
     position: absolute;
@@ -123,6 +142,12 @@ nav {
     padding-right: 40px;
     top: 60%;
     left: auto;
+    text-align: center;
+    color: rgb(186, 186, 186);
+    text-shadow: 0px 0px 10px black;
+}
+.carousel.carousel-slider .carousel-item img {
+    height: 100%;
 }
 span {
     color: rgba(0, 140, 255, 0.658)
@@ -134,27 +159,43 @@ span {
     width: 80%;
 }
 .about {
-    background-color: #f9f9f9;
     margin-top: 20px;
-    margin-bottom: 20px;
     position: relative;
     width: 100%;
     height: 100%;
 }
 .background-about img {
-    max-width: 100%;
-    height: 100%;
+    width: 65%;
+    height: 420px;
 }
 .about-text {
-    background-color: white;
+    background-color: #ffffffc9;
     width: 55%;
-    height: 350px;
+    height: auto;
     margin: 40px;
     margin-top: 140px;
     position: absolute;
     top: 0;
     margin-left: 50%;
     box-shadow: 0px 0px 12px #ddd;
+    text-align: center;
+}
+.about-text h3, .about-text h5, .about-text ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}.about-text ul{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.about-text ul li {
+    padding-left: 0px;
+    padding-right: 5px;
+    margin-left: 25px;
+    text-align: justify;
+    list-style-image: url(../images/check-mark.png)
+}
+h3 {
+    margin-bottom: 0;
 }
 .footer {
     background-color: rgb(59, 57, 57);
@@ -165,11 +206,13 @@ span {
     text-align: center;
 }
 .container-logo {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 30%;
-    left: calc(50% - 12%)
+    top: 25%;
+    left: calc(50% - 12%);
+    z-index: 1;
 }
 .container-logo img {
     width: 400px;
@@ -185,8 +228,12 @@ span {
     text-align: center;
 }
 .footer .row {
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.galery {
+    margin-bottom: 0 !important;
+    padding-bottom: 70px;
 }
 .icons-info h4 {
     display: inline-block;
@@ -232,11 +279,160 @@ span {
 .copyright {
     font-size: 1rem;
     position: relative;
-    top: -100px;
+    top: -80px;
 }
 button {
     background-color: rgba(0, 140, 255, 0.658) !important;
 }
+.card-mision {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #ffffffc9;
+}
+.tab a {
+    color: black !important;
+}
+.tabs .indicator {
+    background-color: #3c83d7 !important;
+}
+.title{
+    margin: 50px auto 0 auto;
+    text-align:center;
+    color: #fff;
+    font-size: 32px;
+}
+.gallery.box{
+    width: 95%;
+    height: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 1%;
+    border: 5px rgb(27, 26, 26) solid;
+}
+.gallery .card{
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    color: rgba(204, 200, 200, 0.863);
+    text-shadow: 0px 0px 10px rgb(61, 61, 61);
+}
+.gallery .card h1 {
+    color: rgba(226, 226, 226, 0.863) !important;
+}
+.card-content {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.gallery .background, .gallery .column{
+    height: 600px;
+} 
+.gallery .column{
+    width: 100%;
+    float: left;
+}
+.gallery .column.col1{
+    background-color: rgba(36, 38, 51, 0.68)
+}
+.gallery .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    opacity: 0;
+    background-color: rgb(19, 18, 18);
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    margin: 0;
+}
+.gallery .info,
+.gallery .foot{
+    -webkit-transition: bottom 0.35s;
+    -o-transition: bottom 0.35s;
+    transition: bottom 0.35s;
+}
+.gallery .info{
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+}
+.gallery .info h2 a{
+    color: #fff;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    text-decoration:none;
+}
+.gallery .info h2{
+    line-height: 24px;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: 400;
+}
+.gallery .foot{
+    height: 35px;
+    bottom: -35px;
+    position: relative;
+    color: #fff;
+    padding: 0 10px;
+}
+.gallery .foot .social{
+float: right;
+color: #fff;
+font-size: 20px;
+margin-left: 20px;
+}
+.gallery .foot .line{
+    height: 2px;
+    display: block;
+    margin: 10px 0;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 0%;
+    transition: width 0.6s;
+}
+.gallery .logo-text{
+    font-weight: 300;
+}
+.gallery .logo-card{
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    z-index: 1;
+    transition: width 0.35s;
+}
+.gallery:hover .info,
+.gallery:hover .foot{
+    bottom:10px;
+}
+.gallery:hover .overlay{
+    opacity: 0.5;
+}
+.gallery:hover .foot .line{
+    width: 100%;
+}
+.gallery:hover .logo-card{
+    width: 170px;
+}
+/* .gallery:active .info,
+.gallery:active .foot{
+    bottom:10px;
+}
+.gallery:active .overlay{
+    opacity: 0.5;
+}
+.gallery:active .foot .line{
+    width: 100%;
+}
+.gallery:active .logo-card{
+    width: 170px;
+} */
+
+
 @media only screen and (max-width: 480px) {
 .div-section-top {
     padding-left: 5%;
@@ -253,4 +449,4 @@ button {
     height: 45px;
 }
 
-}
+}  
