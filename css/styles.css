@@ -1,7 +1,14 @@
-section {
-    background-image: url(../images/pexels-photo-303335.jpeg);
-    background-attachment: fixed;
+body:before {
+    background-image: url(../images/background-mobile2.jpeg);
     background-size: 100% 100%;
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -666;
 }
 .contact-top-section, .icons-social {
     display: inline;
@@ -79,7 +86,7 @@ nav {
     text-align: justify;
     border-radius: 12px;
     background-color: #fbfbfb1a;
-    color: #ffffffc4;
+    color: rgba(255, 255, 255, 0.788);
 }
 .portfolio-div .portfolio-img img{
     width: 100%;
@@ -138,7 +145,7 @@ nav {
 }
 .carousel.carousel-slider .carousel-item h2 {
     position: absolute;
-    padding-left: 60px;
+    padding-left: 40px;
     padding-right: 40px;
     top: 60%;
     left: auto;
@@ -169,7 +176,7 @@ span {
     height: 420px;
 }
 .about-text {
-    background-color: #ffffffc9;
+    background-color: rgba(255, 255, 255, 0.788);
     width: 55%;
     height: auto;
     margin: 40px;
@@ -180,7 +187,7 @@ span {
     box-shadow: 0px 0px 12px #ddd;
     text-align: center;
 }
-.about-text h3, .about-text h5, .about-text ul {
+.about-text h3, .about-text h5 {
     padding-left: 20px;
     padding-right: 20px;
 }.about-text ul{
@@ -288,7 +295,7 @@ button {
     width: 60%;
     margin: auto;
     margin-bottom: 50px;
-    background-color: #ffffffc9;
+    background-color: rgba(255, 255, 255, 0.788);
 }
 .tab a {
     color: black !important;
@@ -308,7 +315,7 @@ button {
     margin: 40px auto;
     overflow: hidden;
     border-radius: 1%;
-    border: 5px rgb(27, 26, 26) solid;
+    border: 3px rgb(27, 26, 26) solid;
 }
 .gallery .card{
     position: relative;
@@ -433,20 +440,136 @@ margin-left: 20px;
 } */
 
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+body:before {
+    background-image: url(../images/background-mobile3.jpeg);
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -666;
+}
 .div-section-top {
     padding-left: 5%;
     padding-right: 5%;
     height: 45px;
 }
-
+.container-logo {
+    left: 17%;
 }
-
-@media only screen and (min-width: 481px) and (max-width:1024px){
+.container-logo img {
+    width: 100%;
+}
+.nav-wrapper a img {
+    display: none;
+}
+.background-about img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+.about-text {
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 100%;
+    height: auto;
+    margin: 40px;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    margin-left: 10%;
+    margin-right: 0;
+    box-shadow: 0px 0px 12px #ddd;
+    text-align: center;
+}
+.about-text h3 {
+    font-size: 1.7rem;
+}
+.about-text h5 {
+    font-size: 1.1rem;
+}
+.about-text ul {
+    padding: 0;
+}
+.divider-especial {
+    margin-top: 380px;
+}
+.main-title {
+    font-size: 2rem;
+}
+.icons-info div img {
+    width: 270px;
+    height: auto;
+}
+.input-field.col .prefix ~ #ubication ~ label {
+    font-size: 10px !important;
+}
+.carousel.carousel-slider .carousel-item h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.display-none {
+    display: none;
+}
+.gallery.box{
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+    border: 2px rgb(27, 26, 26) solid;
+}
+.text-p {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 18px;
+    margin-bottom: 0px !important;
+}
+.logo-card {
+    width: 55% !important;
+}
+.gallery:hover .logo-card{
+    width: 25% !important;
+}
+.gallery .info{
+    bottom: -120px;
+    width: 100%;
+}
+.gallery.box{
+    width: 95%;
+    height: 720px;
+}
+.gallery .background, .gallery .column{
+    height: 720px;
+} 
+.card-mision {
+    width: 100%;
+}
+.card-content {
+    font-size: 1rem;
+}
+.tabs {
+    background-color: #2087e0;
+}
+form {
+    margin-bottom: 20px;
+}
+}
+/* @media only screen and (min-width: 481px) and (max-width:1024px){
 .div-section-top {
     padding-left: 5%;
     padding-right: 5%;
     height: 45px;
 }
-
-}  
+} */
+/* @media screen and (min-width: 601px) {
+    section {
+      background: url(../images/background-mobile3.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  } */
