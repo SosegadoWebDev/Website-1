@@ -1,3 +1,6 @@
+body {
+    font-style: oblique;
+}
 body:before {
     background-image: url(../images/background-mobile2.jpeg);
     background-size: 100% 100%;
@@ -85,7 +88,7 @@ nav {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     text-align: justify;
     border-radius: 12px;
-    background-color: #fbfbfb1a;
+    background-color: rgba(255, 255, 255, 0.233);
     color: rgba(255, 255, 255, 0.788);
 }
 .portfolio-div .portfolio-img img{
@@ -134,6 +137,9 @@ nav {
     color: black !important;
     text-shadow: 0px 0px 15px rgb(163, 211, 255);
 }
+.portfolio-text p {
+    text-shadow: 0px 0px 10px black;
+}
 .footer h1 {
     text-shadow: none;
 }
@@ -174,6 +180,7 @@ span {
 .background-about img {
     width: 65%;
     height: 420px;
+    border-radius: 5px;
 }
 .about-text {
     background-color: rgba(255, 255, 255, 0.788);
@@ -234,9 +241,12 @@ h3 {
     margin: 0 auto !important;
     text-align: center;
 }
+.footer-form form {
+    margin-bottom: 10px !important;
+}
 .footer .row {
     margin-top: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 0px !important;
 }
 .galery {
     margin-bottom: 0 !important;
@@ -290,7 +300,9 @@ h3 {
 }
 button {
     background-color: rgba(0, 140, 255, 0.658) !important;
+    margin-bottom: 15px;
 }
+
 .card-mision {
     width: 60%;
     margin: auto;
@@ -511,6 +523,7 @@ body:before {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    text-align: justify;
 }
 .display-none {
     display: none;
